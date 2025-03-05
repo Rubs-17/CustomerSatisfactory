@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer Satisfaction Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg5.jpg');
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            backdrop-filter: blur(17px);
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #080808;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #f01896;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customer Satisfaction Survey Form</h2>
+    <div class="container">
+        <form>
+            <label for="reason">1) Why did you contact customer service?</label>
+            <textarea id="reason" name="reason" rows="5"></textarea>
+            
+            <label>2) What method did you use to contact customer service?</label>
+            <input type="radio" name="method" value="telephone"> Telephone
+            <input type="radio" name="method" value="mail"> Mail
+            <input type="radio" name="method" value="email"> E-mail
+            <input type="radio" name="method" value="fax"> Fax 
+            <input type="radio" name="method" value="other"> Other 
+            <textarea id="other" name="other" rows="1"></textarea>
+            
+            <label>3) How satisfied are you with the time it took customer service to answer your question or resolve your issue?</label>
+            <input type="radio" name="satisfaction" value="very_dissatisfied"> Very Dissatisfied
+            <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+            <input type="radio" name="satisfaction" value="undecided"> Undecided
+            <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+            <input type="radio" name="satisfaction" value="very_satisfied"> Very Satisfied
+            
+            <h3>Please tell us how much you agree or disagree with the following statements.</h3>
+            
+            <label>4) The customer service representative was knowledgeable and easy to understand.</label>
+            <input type="radio" name="knowledge" value="strongly_disagree"> Strongly Disagree
+            <input type="radio" name="knowledge" value="disagree"> Disagree
+            <input type="radio" name="knowledge" value="undecided"> Undecided
+            <input type="radio" name="knowledge" value="agree"> Agree
+            <input type="radio" name="knowledge" value="strongly_agree"> Strongly Agree
+            
+            <label>5) The customer service representative was able to handle my problem quickly and to my satisfaction.</label>
+            <input type="radio" name="handling" value="strongly_disagree"> Strongly Disagree
+            <input type="radio" name="handling" value="disagree"> Disagree
+            <input type="radio" name="handling" value="undecided"> Undecided
+            <input type="radio" name="handling" value="agree"> Agree
+            <input type="radio" name="handling" value="strongly_agree"> Strongly Agree
+            
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
