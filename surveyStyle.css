@@ -1,5 +1,5 @@
 body {
-    background-color: #f0c6d9; /* Background image */
+    background-image: url('bg6.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .container {
     padding: 200px;
     border-radius: 10px;
